@@ -4,7 +4,7 @@ const data = [
     title: '글깨비',
     description:
       '최근 2030세대의 문해력 문제가 주목받고 있는 가운데, 맞춤법과 발음을 재미있게 공부할 수 있도록 게임 요소를 가미한 사이트 입니다.',
-    image: '/geul_kkae_bi_logo.png',
+    image: '/geul_kkab_bi.svg',
     team: true,
     stack: ['Next.js', 'TypeScript', 'Pnpm', 'Supabase'],
     github: 'https://github.com/dev-rjw/geul-kkae-bi',
