@@ -11,7 +11,7 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
 
   return createPortal(
     <div className='fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.54)] z-10'>
-      <div className='bg-white relative sm:p-2 md:p-6 flex items-center justify-center w-[80%] h-[80%] dark:bg-[#0f1418]'>
+      <div className='bg-[#0f1418] relative flex items-center justify-center w-[100%] h-[100%]'>
         {children}
         <button onClick={onClose} className='modal_btn rounded absolute top-[10px] right-[10px] z-50'></button>
       </div>
