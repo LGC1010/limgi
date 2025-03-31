@@ -9,24 +9,23 @@ export default function FrontEndTab() {
           <ul className='flex flex-col gap-6'>
             <li className='flex items-center'>
               <div className='shadow-lg rounded-[10px] p-4 bg-white'>
-                <Image src={'/icon_next.svg'} alt={''} width={30} height={30}></Image>
-              </div>
-              <div className='ml-8 text-white'>
-                <strong className='text-[24px]'>NEXT JS</strong>
-                <p className='mt-2'>
-                  Next.js를 활용하여 서버 사이드 렌더링(SSR)과 정적 사이트 생성(SSG)을 적용할 수 있으며, 최적화된 웹
-                  애플리케이션을 개발할 수 있습니다.
-                </p>
-              </div>
-            </li>
-            <li className='flex items-center'>
-              <div className='shadow-lg rounded-[10px] p-4 bg-white'>
                 <Image src={'/icon_react.svg'} alt={''} width={30} height={30}></Image>
               </div>
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>REACT</strong>
                 <p className='mt-2'>
-                  React를 활용하여 컴포넌트 기반 개발을 수행할 수 있으며, 상태 관리와 최적화를 통해 효율적인 UI를 구성할
+                  컴포넌트 기반 개발을 수행할 수 있으며, 상태 관리와 최적화를 통해 효율적인 UI를 구성할 수 있습니다.
+                </p>
+              </div>
+            </li>
+            <li className='flex items-center'>
+              <div className='shadow-lg rounded-[10px] p-4 bg-white'>
+                <Image src={'/icon_next.svg'} alt={''} width={30} height={30}></Image>
+              </div>
+              <div className='ml-8 text-white'>
+                <strong className='text-[24px]'>NEXT JS</strong>
+                <p className='mt-2'>
+                  서버 사이드 렌더링(SSR)과 정적 사이트 생성(SSG)을 사용할 수 있으며 최적화된 웹 애플리케이션을 개발할
                   수 있습니다.
                 </p>
               </div>
@@ -38,8 +37,8 @@ export default function FrontEndTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>TAILWIND</strong>
                 <p className='mt-2'>
-                  Tailwind CSS를 활용하여 유틸리티 퍼스트 방식을 적용한 스타일링이 가능하며, 유지보수성과 확장성이
-                  뛰어난 디자인 시스템을 구축할 수 있습니다.
+                  유틸리티 퍼스트 방식을 적용한 스타일링이 가능하며, 유지보수성과 확장성이 뛰어난 디자인 시스템을 구축할
+                  수 있습니다.
                 </p>
               </div>
             </li>
@@ -55,7 +54,7 @@ export default function FrontEndTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>AXIOS</strong>
                 <p className='mt-2'>
-                  Axios를 활용하여 HTTP 요청을 효율적으로 처리할 수 있으며, 인터셉터와 에러 핸들링을 통해 안정적인
+                  Axios를 활용하여 HTTP 요청을 효율적으로 처리할 수 있으며 인터셉터와 에러 핸들링을 통해 안정적인
                   네트워크 통신을 구현할 수 있습니다.
                 </p>
               </div>
@@ -67,8 +66,8 @@ export default function FrontEndTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>ZUSTAND</strong>
                 <p className='mt-2'>
-                  Zustand를 활용하여 가벼운 상태 관리를 수행할 수 있으며, 직관적인 API와 최적화된 상태 업데이트를 통해
-                  성능을 고려한 애플리케이션을 개발할 수 있습니다.
+                  가벼운 상태 관리를 수행할 수 있으며 직관적인 API와 최적화된 상태 업데이트를 통해 성능을 고려한
+                  애플리케이션을 개발할 수 있습니다.
                 </p>
               </div>
             </li>

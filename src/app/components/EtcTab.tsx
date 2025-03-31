@@ -14,8 +14,8 @@ export default function EtcTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>GIT</strong>
                 <p className='mt-2'>
-                  Git을 활용하여 효율적인 버전 관리를 수행할 수 있으며, 브랜치 전략과 협업 워크플로우를 적용하여
-                  안정적인 개발 환경을 구축할 수 있습니다
+                  Git을 활용하여 효율적인 버전 관리를 수행할 수 있으며 다양한 협업 워크플로우를 적용하여 안정적인 개발
+                  환경을 구축할 수 있습니다
                 </p>
               </div>
             </li>
@@ -38,8 +38,8 @@ export default function EtcTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>GITLAB</strong>
                 <p className='mt-2'>
-                  GitLab을 활용하여 CI/CD 파이프라인을 구축할 수 있으며, 코드 리뷰 및 프로젝트 관리를 통해 효율적인
-                  DevOps 환경을 조성할 수 있습니다.
+                  GitLab을 활용하여 CI/CD 파이프라인을 구축할 수 있으며 코드 리뷰 및 프로젝트 관리를 통해 효율적인
+                  환경을 조성할 수 있습니다.
                 </p>
               </div>
             </li>
@@ -50,8 +50,8 @@ export default function EtcTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>VERCEL</strong>
                 <p className='mt-2'>
-                  Vercel을 활용하여 Next.js 애플리케이션을 빠르고 간편하게 배포할 수 있으며, 자동 빌드 및 배포 환경을
-                  구성하여 개발 생산성을 높일 수 있습니다.
+                  Vercel을 활용하여 애플리케이션을 빠르고 간편하게 배포할 수 있으며, 자동 빌드 및 배포 환경을 구성하여
+                  개발 생산성을 높일 수 있습니다.
                 </p>
               </div>
             </li>

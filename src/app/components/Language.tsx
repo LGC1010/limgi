@@ -14,8 +14,7 @@ export default function LanguageTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>HTML</strong>
                 <p className='mt-2'>
-                  HTML을 활용하여 시맨틱 마크업을 작성하고, 접근성과 SEO를 고려한 구조적인 웹페이지를 구현할 수
-                  있습니다.
+                  시맨틱 마크업을 사용하고, 접근성과 SEO를 고려한 구조적인 웹페이지를 구현할 수 있습니다.
                 </p>
               </div>
             </li>
@@ -26,8 +25,8 @@ export default function LanguageTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>CSS</strong>
                 <p className='mt-2'>
-                  CSS를 활용하여 반응형 디자인과 다양한 스타일링 기법을 적용할 수 있으며, 유지보수가 용이한 구조로
-                  스타일을 작성할 수 있습니다.
+                  반응형 디자인과 다양한 스타일링 기법을 적용할 수 있으며, 유지보수가 용이한 구조로 스타일을 작성할 수
+                  있습니다.
                 </p>
               </div>
             </li>
@@ -38,8 +37,7 @@ export default function LanguageTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>JAVASCRIPT</strong>
                 <p className='mt-2'>
-                  JavaScript를 활용하여 동적인 웹 애플리케이션을 개발할 수 있으며, 비동기 처리와 최적화된 코드 작성을
-                  통해 성능을 개선할 수 있습니다.
+                  동적인 웹 애플리케이션을 개발하며 비동기 처리와 최적화된 코드 작성을 통해 성능을 개선할 수 있습니다.
                 </p>
               </div>
             </li>
@@ -50,8 +48,7 @@ export default function LanguageTab() {
               <div className='ml-8 text-white'>
                 <strong className='text-[24px]'>TYPESCRIPT</strong>
                 <p className='mt-2'>
-                  TypeScript를 활용하여 명확한 타입 기반 코드를 작성할 수 있으며, 제네릭, 인덱싱, 유틸리티 타입을
-                  사용하여 확장성과 안정성을 고려한 개발이 가능합니다.
+                  제네릭, 인덱싱, 유틸리티등 다양한 타입을 사용하여 확장성과 안정성을 고려한 개발이 가능합니다.
                 </p>
               </div>
             </li>
