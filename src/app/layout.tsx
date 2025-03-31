@@ -1,17 +1,9 @@
 'use client';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Noto_Sans_KR } from 'next/font/google';
 import './globals.css';
 import { useEffect, useState } from 'react';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin']
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin']
-});
+const notoSans = Noto_Sans_KR({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });
 
 export default function RootLayout({
   children
@@ -29,8 +21,9 @@ export default function RootLayout({
   }, []);
   return (
     <html lang='en'>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${show ? '' : 'overflow-hidden'}`}>
+      <body className={`${notoSans.className} antialiased ${show ? '' : 'overflow-hidden'}`}>
         {children}
+        <div id='global-modal' />
       </body>
     </html>
   );
