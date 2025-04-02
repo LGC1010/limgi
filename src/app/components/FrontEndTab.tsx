@@ -3,47 +3,49 @@ import Image from 'next/image';
 export default function FrontEndTab() {
   return (
     <div className='max-w-[1000px]'>
-      <ul className='flex flex-wrap gap-8 justify-between px-[52px] pt-4 sm:pb-14 md:pb-28'>
+      <ul className='flex flex-wrap gap-8 justify-between px-[52px] pt-4 max-md:px-3'>
         <li>
-          <strong className='mb-4 inline-block lg:text-[28px] text-white text-[24px]'>SKILL &amp; FrontEnd</strong>
+          <strong className='mb-4 inline-block lg:text-[28px] text-white text-[24px] max-md:text-lg'>
+            SKILL &amp; FrontEnd
+          </strong>
           <ul className='flex flex-col gap-6'>
             <li className='flex items-center'>
-              <div className='shadow-lg rounded-[10px] p-4 bg-white'>
+              <div className='shadow-lg rounded-[10px] p-4 bg-white min-w-[62px]'>
                 <Image src={'/icon_react.svg'} alt={''} width={30} height={30}></Image>
               </div>
               <div className='ml-8 text-white'>
-                <strong className='text-[24px]'>REACT</strong>
-                <p className='mt-2'>
+                <strong className='text-[24px] max-md:text-lg'>REACT</strong>
+                <p className='mt-2 max-md:text-[14px]'>
                   컴포넌트 기반 개발을 수행할 수 있으며, 상태 관리와 최적화를 통해 효율적인 UI를 구성할 수 있습니다.
                 </p>
               </div>
             </li>
             <li className='flex items-center'>
-              <div className='shadow-lg rounded-[10px] p-4 bg-white'>
+              <div className='shadow-lg rounded-[10px] p-4 bg-white min-w-[62px]'>
                 <Image src={'/icon_next.svg'} alt={''} width={30} height={30}></Image>
               </div>
               <div className='ml-8 text-white'>
-                <strong className='text-[24px]'>NEXT JS</strong>
-                <p className='mt-2'>
+                <strong className='text-[24px] max-md:text-lg'>NEXT JS</strong>
+                <p className='mt-2 max-md:text-[14px]'>
                   서버 사이드 렌더링(SSR)과 정적 사이트 생성(SSG)을 사용할 수 있으며 최적화된 웹 애플리케이션을 개발할
                   수 있습니다.
                 </p>
               </div>
             </li>
             <li className='flex items-center'>
-              <div className='shadow-lg rounded-[10px] p-4 bg-white'>
+              <div className='shadow-lg rounded-[10px] p-4 bg-white min-w-[62px]'>
                 <Image src={'/icon_tailwind.svg'} alt={''} width={30} height={30}></Image>
               </div>
               <div className='ml-8 text-white'>
-                <strong className='text-[24px]'>TAILWIND</strong>
-                <p className='mt-2'>
+                <strong className='text-[24px] max-md:text-lg'>TAILWIND</strong>
+                <p className='mt-2 max-md:text-[14px]'>
                   유틸리티 퍼스트 방식을 적용한 스타일링이 가능하며, 유지보수성과 확장성이 뛰어난 디자인 시스템을 구축할
                   수 있습니다.
                 </p>
               </div>
             </li>
             <li className='flex items-center'>
-              <div className='shadow-lg rounded-[10px] p-4 bg-white'>
+              <div className='shadow-lg rounded-[10px] p-4 bg-white min-w-[62px]'>
                 <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 512 75'>
                   <path
                     fill='#000000'
@@ -52,20 +54,20 @@ export default function FrontEndTab() {
                 </svg>
               </div>
               <div className='ml-8 text-white'>
-                <strong className='text-[24px]'>AXIOS</strong>
-                <p className='mt-2'>
+                <strong className='text-[24px] max-md:text-lg'>AXIOS</strong>
+                <p className='mt-2 max-md:text-[14px]'>
                   Axios를 활용하여 HTTP 요청을 효율적으로 처리할 수 있으며 인터셉터와 에러 핸들링을 통해 안정적인
                   네트워크 통신을 구현할 수 있습니다.
                 </p>
               </div>
             </li>
             <li className='flex items-center'>
-              <div className='shadow-lg rounded-[10px] p-4 bg-white'>
+              <div className='shadow-lg rounded-[10px] p-4 bg-white min-w-[62px]'>
                 <Image src={'/icon_zustand.svg'} alt={''} width={30} height={30}></Image>
               </div>
               <div className='ml-8 text-white'>
-                <strong className='text-[24px]'>ZUSTAND</strong>
-                <p className='mt-2'>
+                <strong className='text-[24px] max-md:text-lg'>ZUSTAND</strong>
+                <p className='mt-2 max-md:text-[14px]'>
                   가벼운 상태 관리를 수행할 수 있으며 직관적인 API와 최적화된 상태 업데이트를 통해 성능을 고려한
                   애플리케이션을 개발할 수 있습니다.
                 </p>
