@@ -1,34 +1,49 @@
 const data = [
   {
     id: 1,
-    title: '글깨비',
-    description:
-      '최근 2030세대의 문해력 문제가 주목받고 있는 가운데, 맞춤법과 발음을 재미있게 공부할 수 있도록 게임 요소를 가미한 사이트 입니다.',
+    title: '글깨비 웹사이트',
+    subTitle: '글깨비',
+    description: '맞춤법 학습 사이트',
     image: '/geul_kkab_bi.svg',
     team: true,
-    stack: ['Next.js', 'TypeScript', 'Pnpm', 'Supabase'],
+    stack: ['팀', '반응형', '사이드'],
     github: 'https://github.com/dev-rjw/geul-kkae-bi',
-    demo: 'https://www.geul-kkae-bi.com/'
+    demo: 'https://www.geul-kkae-bi.com/',
+    type: 'geul'
   },
   {
     id: 2,
-    title: '양계장',
-    description: '집중력있게 챌린지를 끝낼 수 있도록 도와주며 자랑할 수 있는 웹사이트.',
+    title: '양계장 웹사이트',
+    subTitle: '양계장',
+    description: '챌린지를 끝낼 수 있도록 도와주는 웹사이트.',
     image: '/poultry_fram_logo.png',
     team: true,
-    stack: ['React', 'Firebase', 'Recoil'],
-    github: 'https://github.com/teamcalendar/calendar',
-    demo: 'https://calendar-demo.vercel.app'
+    stack: ['팀', '사이드'],
+    github: 'https://github.com/hot5667/poultry_farm',
+    demo: 'https://calendar-demo.vercel.app',
+    type: 'poultry'
   },
   {
     id: 3,
-    title: '몽글로드',
+    title: '몽글로드 웹사이트',
+    subTitle: '몽글로드',
     description: '창의적인 산책로와 반려동물 필수 장소 정보를 한눈에 제공하는 맞춤형 서비스.',
     image: '/monggle_logo.png',
     team: true,
-    stack: ['React', 'Firebase', 'Recoil'],
-    github: 'https://github.com/teamcalendar/calendar',
-    demo: 'https://calendar-demo.vercel.app'
+    stack: ['팀', '사이드'],
+    github: 'https://github.com/11-JYP/monggle',
+    demo: 'https://calendar-demo.vercel.app',
+    type: 'monggle'
+  },
+  {
+    id: 4,
+    title: '포트폴리오',
+    subTitle: '포트폴리오',
+    description: '개인 포트폴리오 사이트',
+    team: false,
+    stack: ['개인', '포트폴리오'],
+    demo: 'https://calendar-demo.vercel.app',
+    type: 'monggle'
   }
 ];
 
