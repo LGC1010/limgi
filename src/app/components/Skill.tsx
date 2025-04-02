@@ -27,8 +27,8 @@ const Skill = () => {
       }}
     >
       <h3 className='text-4xl font-black text-superLightGray pb-[2rem] text-white'>Skill</h3>
-      <div className='flex'>
-        <div className='flex flex-col'>
+      <div className='flex max-md:block'>
+        <div className='flex flex-col max-md:block'>
           {tabs.map((tab) => (
             <button
               key={tab.id}

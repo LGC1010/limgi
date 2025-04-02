@@ -1,6 +1,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const Profile = () => {
@@ -27,11 +28,11 @@ const Profile = () => {
       >
         <svg viewBox='0 0 1320 135' className='w-full'>
           <text x='50%' y='50%' dy='40px' textAnchor='middle'>
-            Front End
+            PortFolio
           </text>
         </svg>
         <div>
-          <p className='tracking-in-expand text-[18px] text-[#3e3e3e]'>Lim Gi Cheol Portfolio</p>
+          <p className='tracking-in-expand text-[18px] text-[#3e3e3e]'>Lim Gi Cheol</p>
         </div>
         <div className='lines-wrapper'>
           <span></span>
@@ -82,6 +83,22 @@ const Profile = () => {
           소통 중심의 <strong className='font-bold'>프론트엔드</strong> 개발자입니다.
         </motion.p>
       </section>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={moveUp ? { opacity: 1 } : {}}
+        transition={{ duration: 2 }}
+        className='absolute bottom-0 left-1/2 translate-x-[-50%] w-[43.7vh] h-[64.3vh]'
+      >
+        <Image src='/profile.png' alt={''} layout='fill' objectFit='cover'></Image>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={show ? { opacity: 1 } : {}}
+        transition={{ duration: 2 }}
+        className='mouse absolute bottom-6 left-1/2 translate-x-[-50%] w-[27px] h-[48px] rounded-[15px] border-white border-1'
+      >
+        <span className='bg-white'></span>
+      </motion.div>
     </>
   );
 };
