@@ -7,12 +7,9 @@ const useModal = () => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
     }
-
     return () => {
-      document.body.style.overflow = 'auto'; // 컴포넌트 언마운트 시 원래 상태로 되돌리기
+      document.body.style.overflow = 'auto';
     };
   }, [isOpen]);
 

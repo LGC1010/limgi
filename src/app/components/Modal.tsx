@@ -10,11 +10,16 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   if (!isOpen) return null;
 
   return createPortal(
-    <div className='fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.54)] z-10'>
-      <div className='bg-[#0f1418] relative flex items-center justify-center w-[100%] h-[100%]'>
+    <div className='fixed inset-0 bg-[rgba(0,0,0,0.54)] overflow-y-auto pt-10 z-10 max-md:pt-0' onClick={onClose}>
+      <div
+        className='bg-[#0f1418] max-w-[80vw] mx-auto max-md:max-w-full max-md:h-full'
+        onClick={(e) => e.stopPropagation()}
+      >
         {children}
         <button onClick={onClose} className='modal_btn rounded absolute top-[10px] right-[10px] z-50'></button>
       </div>
+      {/* <div className='bg-[#0f1418] relative flex items-center justify-center w-[100%] h-[100%]'>
+      </div> */}
     </div>,
     document.getElementById('global-modal')!
   );
