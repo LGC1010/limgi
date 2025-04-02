@@ -15,54 +15,63 @@ const Interview = () => {
       }}
       className='relative'
     >
-      <h3 className='text-4xl font-black text-superLightGray pb-1.5 mb-9 border-b-white border-b-[1px] text-white'>
+      <h3 className='text-4xl font-black text-superLightGray pb-1.5 mb-12 border-b-white border-b-[1px] text-white'>
         Interview
       </h3>
       <div>
-        <ul className='text-white flex justify-center flex-wrap gap-10'>
-          <li className='relative w-[300px]'>
-            <span className='absolute top-16 left-1/2 translate-x-[-50%] text-[32px]'>&quot;Q&amp;A&quot;</span>
-            <div className='relative z-[-1] pb-[100%] rounded-[100%] mb-[-50%] bg-[#444]'></div>
+        <ul className='text-white flex justify-center flex-wrap gap-10 max-md:gap-8 max-lg:gap-6'>
+          <li className='relative w-[300px] max-md:w-[calc(50%-32px)] max-lg:w-[calc(33.333%-24px)]'>
+            <div className='relative z-[-1] pb-[100%] rounded-[100%] mb-[-50%] bg-[#444]'>
+              <span className='absolute top-16 left-1/2 translate-x-[-50%] text-[32px] max-md:text-xl max-lg:top-8 max-lg:text-3xl'>
+                &quot;Q&amp;A&quot;
+              </span>
+            </div>
             <div className='bg-[#444] rounded-b-[10px]'>
               <div className='py-4 bg-[#666] text-center min-h-[90px] flex justify-center items-center'>
-                <strong className='text-lg'>프론트엔드로 전향한 이유?</strong>
+                <strong className='text-lg max-md:text-[14px]'>프론트엔드로 전향한 이유?</strong>
               </div>
-              <p className='p-6 text-xl font-semibold line-clamp-[1.38] min-h-[400px]'>
+              <p className='p-6 text-xl font-semibold line-clamp-[1.38] min-h-[400px] max-md:text-[11px] max-md:min-h-[200px] max-lg:min-h-[300px] max-lg:text-[16px] max-lg:p-3'>
                 컴퓨터 전공을 바탕으로 다양한 IT 분야를 접하던 중, 웹사이트 제작에 매력을 느껴 웹 퍼블리셔로 첫 경력을
                 시작했습니다. 더 나아가 개발에 대한 흥미와 역량을 확장하고자 프론트엔드 개발자로 전향하게 되었고, 현재는
                 사용자 중심의 인터페이스와 효율적인 코드 설계에 집중하며 성장하고 있습니다.
               </p>
             </div>
           </li>
-          <li className='relative w-[300px]'>
-            <span className='absolute top-16 left-1/2 translate-x-[-50%] text-[32px]'>&quot;Q&amp;A&quot;</span>
-            <div className='relative z-[-1] pb-[100%] rounded-[100%] mb-[-50%] bg-[#444]'></div>
+          <li className='relative w-[300px] max-md:w-[calc(50%-32px)] max-lg:w-[calc(33.333%-24px)]'>
+            <div className='relative z-[-1] pb-[100%] rounded-[100%] mb-[-50%] bg-[#444]'>
+              <span className='absolute top-16 left-1/2 translate-x-[-50%] text-[32px] max-md:text-xl max-lg:top-8 max-lg:text-3xl'>
+                &quot;Q&amp;A&quot;
+              </span>
+            </div>
             <div className='bg-[#444] rounded-b-[10px]'>
               <div className='py-4 bg-[#666] text-center min-h-[90px] flex justify-center items-center'>
-                <strong className='text-lg'>
+                <strong className='text-lg max-md:text-[14px]'>
                   일에 있어 가장 중요하게
                   <br /> 생각하는 것이 있다면?
                 </strong>
               </div>
-              <p className='p-6 text-xl font-semibold line-clamp-[1.38] min-h-[400px]'>
+              <p className='p-6 text-xl font-semibold line-clamp-[1.38] min-h-[400px] max-md:text-[11px] max-md:min-h-[200px] max-lg:min-h-[300px] max-lg:text-[16px] max-lg:p-3'>
                 저는 일에 있어 팀원들과의 소통을 가장 중요하게 생각합니다. 함께 일하는 사람들과의 열린 대화와 신뢰가
                 있어야 더 좋은 결과물이 나온다고 믿기 때문입니다. 소통이 잘 되는 팀은 서로의 아이디어를 존중하며, 문제
                 상황에서도 유연하게 협업할 수 있다고 생각합니다.
               </p>
             </div>
           </li>
-          <li className='relative w-[300px]'>
-            <span className='absolute top-16 left-1/2 translate-x-[-50%] text-[32px]'>&quot;Q&amp;A&quot;</span>
-            <div className='relative z-[-1] pb-[100%] rounded-[100%] mb-[-50%] bg-[#444]'></div>
+          <li className='relative w-[300px] max-md:w-[calc(50%-16px)] max-lg:w-[calc(33.333%-24px)]'>
+            <div className='relative z-[-1] pb-[100%] rounded-[100%] mb-[-50%] bg-[#444]'>
+              <span className='absolute top-16 left-1/2 translate-x-[-50%] text-[32px] max-md:text-xl max-lg:top-8 max-lg:text-3xl'>
+                &quot;Q&amp;A&quot;
+              </span>
+            </div>
             <div className='bg-[#444] rounded-b-[10px]'>
               <div className='py-4 bg-[#666] text-center min-h-[90px] flex justify-center items-center'>
-                <strong className='text-lg'>
+                <strong className='text-lg max-md:text-[14px]'>
                   자기계발을 위해
                   <br />
                   어떤 것들을 해왔는지?
                 </strong>
               </div>
-              <p className='p-6 text-xl font-semibold line-clamp-[1.38] min-h-[400px]'>
+              <p className='p-6 text-xl font-semibold line-clamp-[1.38] min-h-[400px] max-md:text-[11px] max-md:min-h-[200px] max-lg:min-h-[300px] max-lg:text-[16px] max-lg:p-3'>
                 개발자로서 지속적인 성장을 위해 인터넷 강의 수강, 기술 서적 탐독, 토이 프로젝트 진행 등 다양한 방식으로
                 자기계발을 실천하고 있습니다. 새로운 기술을 익히고 실무에 적용해보며 더 나은 코드를 고민하는 개발자가
                 되기 위해 노력하고 있습니다.
