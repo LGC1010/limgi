@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import About from './components/About';
 import Introduction from './components/Introduction';
 import Main from './components/Main';
+import FloatingBar from './components/FloatingBar';
 
 export default function Home() {
   const [scroll, setScroll] = useState(false);
@@ -26,6 +27,7 @@ export default function Home() {
       </div>
       <About />
       <Introduction />
+      <FloatingBar />
     </>
   );
 }
