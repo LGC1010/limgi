@@ -20,40 +20,47 @@ const Education = () => {
       </div>
       <div className='h-full w-[60%] max-md:w-full'>
         <ul className='flex flex-wrap'>
-          <li className="card relative w-[calc(50%-7.064%)] h-[450px] rounded-[17px] mr-[14.128%] bg-[url('/nbcamp.png')] bg-no-repeat bg-center bg-cover flex justify-center pt-[100px] px-2 max-md:mr-[7%] max-md:w-[calc(50%-3.5%)] max-md:h-[320px]">
-            <p className='absolute bottom-4 left-4 text-white'>2024.07 ~ 2024.11</p>
-            <div className="absolute top-0 left-0 w-full h-full back_card bg-[url('/nbcamp.png')] bg-no-repeat bg-center bg-cover transition-all ease-in duration-300 rounded-[17px] opacity-0 p-4 text-white">
+          <li className="card relative w-[calc(50%-7.064%)] h-[450px] rounded-[17px] overflow-hidden mr-[14.128%] bg-[url('/nbcamp.png')] bg-no-repeat bg-center bg-cover flex justify-center pt-[100px] px-2 max-md:mr-[7%] max-md:w-[calc(50%-3.5%)] max-md:h-[320px]">
+            <p className='absolute bottom-4 left-4 text-[#444]'>2024.07 ~ 2024.11</p>
+            <div className="absolute top-0 left-0 w-full h-full back_card bg-[url('/nbcamp.png')] bg-no-repeat bg-center bg-cover transition-all ease-in duration-300 flex items-center justify-center rounded-[17px] opacity-0 p-4 text-white">
               <div className='relative z-10'>
-                <p className='text-white text-3xl text-center font-bold max-md:text-xl'>내일배움캠프 수료</p>
-                <p className='text-white text-xl font-semibold max-md:text-lg'>ELIF 홈페이지 퍼블리싱 작업</p>
+                <p className='mb-6 text-white text-3xl text-center font-bold max-md:text-xl'>내일배움캠프</p>
+                <p className='text-white text-center text-xl font-semibold max-md:text-lg'>프론트엔드 6기 과정 수료</p>
                 <ul className='text-[#a6a6a6] list-disc ml-4.5 mt-2'>
-                  <li>디자이너와 개발자와 협업하여 원활한 커뮤니케이션 진행</li>
-                  <li>접근성을 고려한 퍼블리싱 작업 수행</li>
+                  <li>프론트엔드 기본과 심화학습 습득</li>
+                  <li>다양한 커리큘럼과 팀 프로젝트를 경험</li>
+                  <li>최종 프로젝트 대상 수상</li>
                 </ul>
               </div>
               <div className='thumb'></div>
             </div>
           </li>
-          <li className='card relative w-[calc(50%-7.064%)] h-[450px] bg-[#444] rounded-[18px] mt-[180px] flex justify-center pt-[100px] px-2 max-md:w-[calc(50%-3.5%)] max-md:h-[320px]'>
-            <p className='text-white text-3xl text-center font-bold max-md:text-xl'>그린아카데미 수료</p>
-            <p className='absolute bottom-4 left-4 text-white'>2016.02~2018</p>
-            <div className='absolute bg-[#444] top-0 left-0 w-full h-full back_card transition-all ease-in duration-300 rounded-[17px] opacity-0 p-4'>
-              <p className='text-white text-xl font-semibold'>FREDIT 홈페이지 모바일 고도화 작업</p>
-              <ul className='text-[#a6a6a6] list-disc ml-4.5 mt-2'>
-                <li>디자이너와 개발자와 협업하여 원활한 커뮤니케이션 진행</li>
-                <li>접근성을 고려한 퍼블리싱 작업 수행</li>
-              </ul>
+          <li className="card relative w-[calc(50%-7.064%)] h-[450px] bg-[#444] rounded-[18px] overflow-hidden mt-[180px] bg-[url('/green_academy.png')] bg-no-repeat bg-center bg-cover flex justify-center pt-[100px] px-2 max-md:w-[calc(50%-3.5%)] max-md:h-[320px]">
+            <p className='absolute bottom-4 left-4 text-[#444]'>2020.03 ~ 2020.07</p>
+            <div className="absolute bg-[#444] top-0 left-0 w-full h-full back_card bg-[url('/green_academy.png')] bg-no-repeat bg-center bg-cover transition-all ease-in duration-300 flex items-center justify-center rounded-[17px] opacity-0 p-4">
+              <div className='relative z-10'>
+                <p className='mb-6 text-white text-3xl text-center font-bold max-md:text-xl'>그린아카데미</p>
+                <p className='text-white text-xl font-semibold'>웹 퍼블리셔 교육 수료</p>
+                <ul className='text-[#a6a6a6] list-disc ml-4.5 mt-2'>
+                  <li>협업과 실무 역량 학습 </li>
+                  <li>기획, 디자인, 퍼블리싱 학습</li>
+                </ul>
+              </div>
+              <div className='thumb'></div>
             </div>
           </li>
-          <li className='card relative w-[calc(50%-7.064%)] h-[450px] bg-[#444] rounded-[18px] flex justify-center pt-[100px] px-2 max-md:mr-[7%] max-md:w-[calc(50%-3.5%)] max-md:h-[320px] max-md:mt-[-120px]'>
+          <li className='card relative w-[calc(50%-7.064%)] h-[450px] bg-[#444] rounded-[18px] overflow-hidden flex justify-center pt-[100px] px-2 max-md:mr-[7%] max-md:w-[calc(50%-3.5%)] max-md:h-[320px] max-md:mt-[-120px]'>
             <p className='text-white text-3xl font-bold max-md:text-xl'>창원문성대학교</p>
-            <p className='absolute bottom-4 left-4 text-white'>2023.1</p>
-            <div className='absolute bg-[#444] top-0 left-0 w-full h-full back_card transition-all ease-in duration-300 rounded-[17px] opacity-0 p-4'>
-              <p className='text-white text-xl font-semibold'>SSG 운영 프로젝트</p>
-              <ul className='text-[#a6a6a6] list-disc ml-4.5 mt-2'>
-                <li>디자이너, 개발자, 기획자와 협업하여 원활한 커뮤니케이션 진행</li>
-                <li>접근성을 고려한 퍼블리싱 작업 수행</li>
-              </ul>
+            <p className='absolute bottom-4 left-4 text-white'>2016.03 ~ 2020.02</p>
+            <div className='absolute bg-[#444] top-0 left-0 w-full h-full back_card transition-all ease-in duration-300 flex items-center justify-between rounded-[17px] opacity-0 p-4'>
+              <div className='relative z-10'>
+                <p className='mb-6 text-white text-3xl font-bold max-md:text-xl'>창원문성대학교 졸업</p>
+                <ul className='text-[#a6a6a6] list-disc ml-4.5 mt-2'>
+                  <li>프로그래밍 언어, 자료구조 등 기초 필수 과목 학습</li>
+                  <li>실무 &amp; 프로젝트 경험</li>
+                </ul>
+              </div>
+              <div className='thumb'></div>
             </div>
           </li>
         </ul>

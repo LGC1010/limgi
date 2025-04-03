@@ -9,8 +9,8 @@ const Profile = () => {
   const [moveUp, setMoveUp] = useState(false);
 
   useEffect(() => {
-    const timer1 = setTimeout(() => setMoveUp(true), 5500); // 2초 후 텍스트 위로 이동
-    const timer2 = setTimeout(() => setShow(true), 6000); // 3.5초 후 인트로 제거
+    const timer1 = setTimeout(() => setMoveUp(true), 5500);
+    const timer2 = setTimeout(() => setShow(true), 6000);
 
     return () => {
       clearTimeout(timer1);

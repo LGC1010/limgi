@@ -10,6 +10,7 @@ import ModalGuel from './ModalGuel';
 import Modal from './Modal';
 import useModal from '@/utils/modal/useModal';
 import { ProjectItem } from '@/types/project';
+import ModalPortfolio from './ModalPortfolio';
 
 const tabs = ['전체', '팀', '개인'];
 
@@ -18,13 +19,14 @@ const Project = () => {
   const { isOpen, modalContent, openModal, closeModal } = useModal();
 
   const handlePopup = (item: ProjectItem) => {
-    // 각 프로젝트 타입에 맞는 컴포넌트 전달
     if (item.type === 'poultry') {
       openModal(<ModalPoultry />);
     } else if (item.type === 'geul') {
       openModal(<ModalGuel />);
     } else if (item.type === 'monggle') {
       openModal(<ModalMonggle />);
+    } else if (item.type === 'portfolio') {
+      openModal(<ModalPortfolio />);
     }
   };
 
@@ -106,6 +108,7 @@ const Project = () => {
                   </a>
                   <button
                     className='text-white px-4 py-2 min-w-[200px] text-center border-white border-1 hover:bg-white hover:text-black'
+                    // onClick={() => openModal(<Modals type={item.type} />)}
                     onClick={() => handlePopup(item)}
                   >
                     VIEW MORE

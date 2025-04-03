@@ -47,12 +47,11 @@ const Career = () => {
                   <br />
                   홈페이지 고도화
                 </p>
-                <p className='text-white text-xl font-semibold max-md:text-[16px]'>
-                  FREDIT 홈페이지 모바일 고도화 작업
-                </p>
+                <p className='text-white text-xl font-semibold max-md:text-[16px]'>FREDIT 홈페이지 고도화</p>
                 <ul className='text-[#a6a6a6] list-disc ml-4.5 mt-2 max-md:text-[12px]'>
                   <li>디자이너와 개발자와 협업하여 원활한 커뮤니케이션 진행</li>
                   <li>접근성을 고려한 퍼블리싱 작업 수행</li>
+                  <li>FREDIT 모바일 고도화 작업</li>
                 </ul>
               </div>
               <div className='thumb'></div>
@@ -65,8 +64,9 @@ const Career = () => {
                 <p className='mb-6 text-white text-3xl font-bold max-md:text-xl'>SSG몰 운영</p>
                 <p className='text-white text-xl font-semibold max-md:text-[16px]'>SSG 운영 프로젝트</p>
                 <ul className='text-[#a6a6a6] list-disc ml-4.5 mt-2 max-md:text-[12px]'>
-                  <li>디자이너, 개발자, 기획자와 협업하여 원활한 커뮤니케이션 진행</li>
-                  <li>접근성을 고려한 퍼블리싱 작업 수행</li>
+                  <li>디자이너, 개발자, 기획자와 협업하여 원활한 작업 진행</li>
+                  <li>접근성을 고려한 퍼블리싱 작업</li>
+                  <li>프로모션 작업 및 SSG몰 운영 퍼블리싱 작업</li>
                 </ul>
               </div>
               <div className='thumb'></div>
