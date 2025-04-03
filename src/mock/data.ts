@@ -4,7 +4,7 @@ const data = [
     title: '글깨비 웹사이트',
     subTitle: '글깨비',
     description: '맞춤법 학습 사이트',
-    image: '/geul_kkab_bi.svg',
+    image: '/geul_kkae_bi_logo.svg',
     team: true,
     stack: ['팀', '반응형', '사이드'],
     github: 'https://github.com/dev-rjw/geul-kkae-bi',
@@ -42,8 +42,8 @@ const data = [
     description: '개인 포트폴리오 사이트',
     team: false,
     stack: ['개인', '포트폴리오'],
-    demo: 'https://calendar-demo.vercel.app',
-    type: 'monggle'
+    demo: 'https://limgi.vercel.app/',
+    type: 'portfolio'
   }
 ];
 
