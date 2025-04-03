@@ -16,8 +16,9 @@ const ModalMonggle = () => {
               기술 스택
             </strong>
             <ul className='text-[16px] pt-[20px] flex flex-wrap opacity-65 max-md:pt-[10px] max-md:text-[12px]'>
-              <li className='pr-6'>첫페이지</li>
-              <li>브랜드페이지</li>
+              <li className='pr-6'>REACT</li>
+              <li className='pr-6'>TAILWIND</li>
+              <li className='pr-6'>KAKAO MAP</li>
             </ul>
           </li>
           <li className='py-[25px] mr-8 w-1/3 max-md:py-[10px] max-md:mr-4'>
@@ -37,23 +38,40 @@ const ModalMonggle = () => {
             </ul>
           </li>
         </ul>
-        <p className='text-2xl font-medium leading-[33px] pt-[10px] pb-[20px] text-white max-md:text-[14px] max-md:leading-[22px] max-md:pt-[10px]'>
-          창의적인 산책로와 반려동물 필수 장소 정보를 한눈에 제공하는 맞춤형 서비스, 몽글로드 입니다. 동물병원,
-          애견카페, 애견호텔, 커스텀 산책로 등 다양한 정보를 얻을 수 있습니다.
-        </p>
-        <p className='text-lg text-white max-md:text-[14px]'>상세 내용</p>
-        <ol className='text-white list-decimal pl-5 mt-4'>
-          <li>
-            <p className='pb-4 max-md:text-[12px]'>KaKao Map API(맵, 현재위치, 마커 사)</p>
-            <ul className='list-disc font-[300] pl-6 max-md:text-[11px]'>
-              <li className='mb-4'>
-                지도 위치를 옮겼을 경우 제주도 위치에서 검색되는 현상 발견 카카오에서 제공해주는 map.getCenter을
-                이용하여 현재 위치에서 검색되게 해결
-              </li>
-              <li className='mb-4'>마커를 이용해 유저에게 필요한 정보 제공</li>
-            </ul>
-          </li>
-        </ol>
+        <div className='flex justify-center'>
+          <div className='relative w-full h-[350px] max-md:h-[150px]'>
+            <Image src={'/monggle_main.gif'} alt={''} layout='fill' objectFit='contain'></Image>
+          </div>
+        </div>
+        <div>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>상세 내용</p>
+          <p className='text-lg leading-[33px] py-[10px] text-white max-md:text-[14px] max-md:leading-[22px]'>
+            창의적인 산책로와 반려동물 필수 장소 정보를 한눈에 제공하는 맞춤형 서비스, 몽글로드 입니다. 동물병원,
+            애견카페, 애견호텔, 커스텀 산책로 등 다양한 정보를 얻을 수 있습니다.
+          </p>
+        </div>
+        <div className='mt-4'>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>주요 기능</p>
+          <ul className='text-white mt-4 list-disc font-[300] pl-6 max-md:text-[11px]'>
+            <li className='mb-4'>지역별 탭과 검색어 입력을 통해 지도에서 확인 가능</li>
+            <li className='mb-4'>지도를 통해 산책로를 직접 그려 저장과 확인을 할 수 있게 구현</li>
+          </ul>
+        </div>
+        <div className='mt-4'>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>트러블 슈팅</p>
+          <ol className='text-white list-decimal pl-5 mt-4'>
+            <li>
+              <p className='pb-4 max-md:text-[12px]'>KaKao Map API(맵, 현재위치, 마커 사)</p>
+              <ul className='list-disc font-[300] pl-6 max-md:text-[11px]'>
+                <li className='mb-4'>
+                  지도 위치를 옮겼을 경우 제주도 위치에서 검색되는 현상 발견 카카오에서 제공해주는 map.getCenter을
+                  이용하여 현재 위치에서 검색되게 해결
+                </li>
+                <li className='mb-4'>마커를 이용해 유저에게 필요한 정보 제공</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
         <a
           className='relative block btn_site w-[242px] h-[60px] leading-[60px] rounded-[10px] text-white mx-auto hover:pr-[38px] max-md:w-full max-md:h-[40px] max-md:leading-[40px] max-md:text-[14px] max-md:rounded-[4px]'
           href='https://monggleroad.vercel.app/'
