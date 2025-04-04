@@ -27,7 +27,7 @@ const ModalPortfolio = () => {
       </ul>
       <div className='flex justify-center'>
         <div className='relative w-full h-[350px] max-md:h-[150px]'>
-          <Image src={'/portfolio_main.png'} alt={''} layout='fill' objectFit='contain'></Image>
+          <Image src={'/portfolio_main.JPG'} alt={''} layout='fill' objectFit='contain'></Image>
         </div>
       </div>
       <div>
