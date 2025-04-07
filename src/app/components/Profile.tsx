@@ -41,7 +41,7 @@ const Profile = () => {
                     initial={{ opacity: 1 }}
                     animate={moveUp ? { opacity: 0 } : {}}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    className="absolute z-[-1] top-1/2 left-2/4 overflow-hidden translate-y-[-50%] translate-x-[-50%] h-[80vh] w-[80vw] flex flex-col items-center justify-center"
+                    className="absolute intro z-[-1] top-1/2 left-2/4 overflow-hidden translate-y-[-50%] translate-x-[-50%] h-[80vh] w-[80vw] flex flex-col items-center justify-center"
                 >
                     <svg viewBox="0 0 1320 135" className="w-full">
                         <text x="50%" y="50%" dy="40px" textAnchor="middle">
