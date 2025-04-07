@@ -14,16 +14,21 @@ const Profile = () => {
         const lastVisit = localStorage.getItem("lastVisitTime");
         const now = Date.now();
         const THIRTY_MINUTES = 30 * 60 * 1000;
-
         setHasMounted(true);
 
         if (!lastVisit || now - Number(lastVisit) > THIRTY_MINUTES) {
+            const timer = setTimeout(() => {
+                document.body.classList.remove("overflow-hidden");
+            }, 5000);
             const timer1 = setTimeout(() => setMoveUp(true), 5500);
             const timer2 = setTimeout(() => setShow(true), 6000);
             localStorage.setItem("lastVisitTime", String(now));
+            document.body.classList.add("overflow-hidden");
             return () => {
                 clearTimeout(timer1);
                 clearTimeout(timer2);
+                clearTimeout(timer);
+                document.body.classList.remove("overflow-hidden");
             };
         } else {
             setMoveUp(true);
