@@ -99,16 +99,17 @@ const Project = () => {
                 </div>
                 <div className='back_card transition-all opacity-0 absolute top-0 left-0 w-full h-full bg-[#323232] flex flex-col items-center justify-center'>
                   <p className='text-center text-2xl text-white font-medium mb-6'>{item.subTitle}</p>
-                  <a
-                    href={item.github}
-                    target='blank'
-                    className='text-white px-4 py-2 mb-4 min-w-[200px] text-center border-white border-1 hover:bg-white hover:text-black'
-                  >
-                    GITHUB
-                  </a>
+                  {item.github ? (
+                    <a
+                      href={item.github}
+                      target='blank'
+                      className='text-white px-4 py-2 mb-4 min-w-[200px] text-center border-white border-1 hover:bg-white hover:text-black'
+                    >
+                      GITHUB
+                    </a>
+                  ) : null}
                   <button
                     className='text-white px-4 py-2 min-w-[200px] text-center border-white border-1 hover:bg-white hover:text-black'
-                    // onClick={() => openModal(<Modals type={item.type} />)}
                     onClick={() => handlePopup(item)}
                   >
                     VIEW MORE
