@@ -8,7 +8,7 @@ const ModalGuel = () => {
           <Image src={'/geul_kkae_bi_logo.svg'} alt={''} layout='fill' objectFit='cover'></Image>
         </div>
         <h2 className='py-[25px] text-[35px] font-medium text-white max-md:py-[10px] max-md:text-[22px]'>
-          한국인을 위한 한국어 맞춤법 &amp; 어휘 &amp; 발음 학습 사이트
+          한국인을 위한 한국어 맞춤법 어휘 발음 학습 사이트
         </h2>
         <ul className='flex text-[24px] text-white'>
           <li className='py-[25px] mr-8 w-1/3 max-md:py-[10px] max-md:mr-4'>
@@ -45,54 +45,60 @@ const ModalGuel = () => {
           </div>
         </div>
         <div>
-          <p className='text-2xl text-white max-md:text-[18px] font-medium'>상세 내용</p>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>웹 사이트 소개</p>
           <p className='text-lg leading-[33px] py-[10px] text-white max-md:text-[14px] max-md:leading-[22px]'>
             최근 2030세대의 문해력 문제가 주목받고 있는 가운데, 맞춤법과 발음을 재미있게 공부할 수 있도록 게임 요소를
             가미한 사이트입니다
           </p>
         </div>
         <div className='mt-4'>
-          <p className='text-2xl text-white max-md:text-[18px] font-medium'>작업 기여도</p>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>담당 파트</p>
+          <p className='text-[16px] leading-[33px] py-[10px] text-white max-md:text-[14px] max-md:leading-[22px]'>
+            Speech-to-Text 기반의 실시간 발음 평가 게임 전체 구현을 맡아, 사용자의 발음 연습 흐름과 결과 피드백 과정을
+            설계 개발했습니다.
+          </p>
+          <ul className='text-white mt-4 list-disc font-[300] pl-6 max-md:text-[11px] max-md:mt-1'>
+            <li className='mb-4'>Speech-to-Text 기반의 실시간 발음 평가 게임 구현</li>
+            <li className='mb-4'>발음 비교, 오답 저장, 결과 시각화로 사용자 연습 흐름을 향상</li>
+            <li className='mb-4'>반응형 UI 구성으로 다양한 디바이스에서도 일관된 사용자 경험 제공</li>
+          </ul>
+        </div>
+        <div className='mt-4'>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>구현 기능</p>
           <ul className='text-white mt-4 list-disc font-[300] pl-6 max-md:text-[11px]'>
-            <li className='mb-4'>유저의 발음을 문제와 비교하여 정확도를 측정하는 게임 나야 발음왕 구현</li>
-            <li className='mb-4'>게임 결과에 따라 나오는 결과 페이지 영역 작업</li>
-            <li className='mb-4'>게임에 대한 오답 정확도 체크 및 확인</li>
-            <li className='mb-4'>반응형으로 개발하여 사용자에게 좋은 경험을 제공</li>
+            <li className='mb-4'>유저 발음을 문제 문장과 비교해 정확도 측정</li>
+            <li className='mb-4'>게임 결과에 따라 결과 페이지 및 오답 확인 기능 제공</li>
+            <li className='mb-4'>Zustand를 이용한 오답 저장 및 상태 관리</li>
+            <li className='mb-4'>오답 데이터를 로컬스토리지 + DB에 저장하여 새로고침 시에도 유지</li>
           </ul>
         </div>
         <div className='mt-4'>
           <p className='text-2xl text-white max-md:text-[18px] font-medium'>트러블 슈팅</p>
           <ol className='text-white list-decimal pl-5 mt-4'>
             <li>
-              <p className='pb-4 max-md:text-[12px]'>Speech to text API를 이용하여 나야 발음왕 게임 개발</p>
-              <ul className='list-disc font-[300] pl-6 max-md:text-[11px]'>
-                <li className='mb-4'>
-                  유저 테스트때 처음 오디오 점수가 계속 0으로 나오는 현상 확인 렌더링이 일어나도 인스터스가 유지되게
-                  useRef 적용하여 유저에게 더 좋은 서비스 제공
-                </li>
-                <li className='mb-4'>
-                  총합 점수가 100점이 넘어가는 현상 발생하여 유저 랭킹에 영향을 끼침 데이터 합산 로직, 변수가 리셋
-                  안됨을 확인 이후 Throttling과 unmount시 데이터를 리셋하 여 문제 해결
-                </li>
-              </ul>
+              <p className='pb-4 max-md:text-[12px]'>
+                오디오 점수 0점 발생 → useRef로 인스턴스 유지 및 초기화 시점 개선
+              </p>
             </li>
             <li>
-              <p className='pb-4 max-md:text-[12px]'>게임 결과에 따른 오답 확인 작업</p>
-              <ul className='list-disc font-[300] pl-6 max-md:text-[11px]'>
-                <li className='mb-4'>
-                  3가지의 오답 관리를 zustand로하여 데이터를 관리, 새로고침시 데이터 휘발성으로 사라 짐 데이터를 쌓는
-                  목적으로 로컬과, 데이터베이스로 관리하여 해결
-                </li>
-                <li className='mb-4'>
-                  모든 오답을 알고 싶다는 유저의 피드백을 받아 데이터의 기록을 쌓아서 보여주게 구현
-                </li>
-                <li className='mb-4'>
-                  유저가 문제 삭제시 화면에서 삭제되지 않는 현상발생 react query에서 제공하는 refetch를 이용하여
-                  데이터를 다시 불러와 문제 해
-                </li>
-              </ul>
+              <p className='pb-4 max-md:text-[12px]'>
+                총합 점수 100점 초과 → 점수 누적 로직 수정 및 unmount 시 초기화 처리
+              </p>
+            </li>
+            <li>
+              <p className='pb-4 max-md:text-[12px]'>오답 상태 휘발성 → 로컬 + DB 병행 저장으로 새로고침 시 유지</p>
+            </li>
+            <li>
+              <p className='pb-4 max-md:text-[12px]'>오답 문제 삭제 후 반영 안됨 → React Query의 refetch로 즉시 반영</p>
             </li>
           </ol>
+        </div>
+        <div className='my-4'>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>협업</p>
+          <p className='text-[16px] leading-[33px] py-[10px] text-white max-md:text-[14px] max-md:leading-[22px]'>
+            매일 스탠드업 미팅을 통해 진행 상황을 공유하고, 기획자·디자이너와 UI 흐름에 대해 의견을 주고받으며 최적의
+            사용자 경험을 설계했습니다.
+          </p>
         </div>
         <a
           className='relative block btn_site w-[242px] h-[60px] leading-[60px] rounded-[10px] text-white mx-auto hover:pr-[38px] max-md:w-full max-md:h-[40px] max-md:leading-[40px] max-md:text-[14px] max-md:rounded-[4px]'

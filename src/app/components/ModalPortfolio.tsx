@@ -31,18 +31,19 @@ const ModalPortfolio = () => {
         </div>
       </div>
       <div>
-        <p className='text-2xl text-white max-md:text-[18px] font-medium'>상세 내용</p>
+        <p className='text-2xl text-white max-md:text-[18px] font-medium'>웹 사이트 설명</p>
         <p className='text-lg leading-[33px] py-[10px] text-white max-md:text-[14px] max-md:leading-[22px]'>
-          창의적인 산책로와 반려동물 필수 장소 정보를 한눈에 제공하는 맞춤형 서비스, 몽글로드 입니다. 동물병원,
-          애견카페, 애견호텔, 커스텀 산책로 등 다양한 정보를 얻을 수 있습니다.
+          저의 고민과 성장 과정을 담은 인터랙티브 포트폴리오 사이트입니다. 프로젝트마다 어떤 역할을 했는지, 어떤 문제를
+          해결했는지에 초점을 맞춰 설명하였으며, 방문자가 쉽고 빠르게 제 실력을 이해할 수 있도록 UI와 콘텐츠를
+          구성하였으며 현재있는 기능 제외 계속 업데이트 예정입니다.
         </p>
       </div>
       <div className='mt-4'>
-        <p className='text-2xl text-white max-md:text-[18px] font-medium'>주요 기능</p>
+        <p className='text-2xl text-white max-md:text-[18px] font-medium'>주요 특징</p>
         <ul className='text-white mt-4 list-disc font-[300] pl-6 max-md:text-[11px]'>
-          <li className='mb-4'>framer motion을 이용해서 다양한 애니메이션 효과를 확인 할 수 있습니다</li>
-          <li className='mb-4'>자기 소개와 지금까지 해왔던 프로젝트를 확인 가능합니다</li>
-          <li className='mb-4'>현재있는 기능 제외 계속 업데이트 예정입니다.</li>
+          <li className='mb-4'>Framer Motion을 활용해 스크롤에 따라 콘텐츠가 부드럽게 등장하도록 구성</li>
+          <li className='mb-4'>다양한 디바이스 환경에서도 일관된 사용자 경험을 제공할 수 있도록 반응형으로 설계함</li>
+          <li className='mb-4'>자기 소개와 지금까지 해왔던 프로젝트를 확인 가능</li>
         </ul>
       </div>
       <a

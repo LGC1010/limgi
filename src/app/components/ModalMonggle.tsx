@@ -44,33 +44,49 @@ const ModalMonggle = () => {
           </div>
         </div>
         <div>
-          <p className='text-2xl text-white max-md:text-[18px] font-medium'>상세 내용</p>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>웹 사이트 소개</p>
           <p className='text-lg leading-[33px] py-[10px] text-white max-md:text-[14px] max-md:leading-[22px]'>
             창의적인 산책로와 반려동물 필수 장소 정보를 한눈에 제공하는 맞춤형 서비스, 몽글로드 입니다. 동물병원,
             애견카페, 애견호텔, 커스텀 산책로 등 다양한 정보를 얻을 수 있습니다.
           </p>
         </div>
         <div className='mt-4'>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>담당 파트</p>
+          <p className='text-[16px] leading-[33px] py-[10px] text-white max-md:text-[14px] max-md:leading-[22px]'>
+            검색어 입력 및 카테고리 클릭 시 지도가 해당 위치로 이동하는 기능을 구현하였습니다.
+          </p>
+        </div>
+        <div className='mt-4'>
           <p className='text-2xl text-white max-md:text-[18px] font-medium'>주요 기능</p>
           <ul className='text-white mt-4 list-disc font-[300] pl-6 max-md:text-[11px]'>
-            <li className='mb-4'>지역별 탭과 검색어 입력을 통해 지도에서 확인 가능</li>
-            <li className='mb-4'>지도를 통해 산책로를 직접 그려 저장과 확인을 할 수 있게 구현</li>
+            <li className='mb-4'>장소 클릭 시 관련 상세 정보 및 마커 표시 제공</li>
+            <li className='mb-4'>산책로 직접 그리기 및 저장 기능</li>
+            <li className='mb-4'>지역 선택 및 검색어 입력으로 지도 상에서 장소 탐색 가능</li>
           </ul>
         </div>
         <div className='mt-4'>
           <p className='text-2xl text-white max-md:text-[18px] font-medium'>트러블 슈팅</p>
           <ol className='text-white list-decimal pl-5 mt-4'>
             <li>
-              <p className='pb-4 max-md:text-[12px]'>KaKao Map API(맵, 현재위치, 마커 사)</p>
-              <ul className='list-disc font-[300] pl-6 max-md:text-[11px]'>
-                <li className='mb-4'>
-                  지도 위치를 옮겼을 경우 제주도 위치에서 검색되는 현상 발견 카카오에서 제공해주는 map.getCenter을
-                  이용하여 현재 위치에서 검색되게 해결
-                </li>
-                <li className='mb-4'>마커를 이용해 유저에게 필요한 정보 제공</li>
-              </ul>
+              <p className='pb-4 max-md:text-[12px]'>
+                지도 이동 후 제주도에서 검색되는 문제 → Kakao Map의 map.getCenter를 활용해 현재 중심 위치 기준으로
+                검색되도록 수정
+              </p>
+            </li>
+            <li>
+              <p className='pb-4 max-md:text-[12px]'>
+                마커 정보 미표시 이슈 → 마커 클릭 시 장소 정보가 유저에게 명확히 전달되도록 커스터마이징
+              </p>
             </li>
           </ol>
+        </div>
+        <div className='my-4'>
+          <p className='text-2xl text-white max-md:text-[18px] font-medium'>협업 경험</p>
+          <p className='text-[16px] leading-[33px] py-[10px] text-white max-md:text-[14px] max-md:leading-[22px]'>
+            초기 기획 단계에서 팀원들과 적극적으로 소통하여 각자의 역할을 명확히 분담하였고, 짧은 개발 기간 동안
+            효율적으로 기능을 나누어 구현함으로써 프로젝트를 기한 내에 마무리할 수 있었습니다. 원활한 협업 구조 덕분에
+            개발에 집중할 수 있었고, 책임감을 갖고 맡은 기능을 완성하는 경험을 할 수 있었습니다.
+          </p>
         </div>
         <a
           className='relative block btn_site w-[242px] h-[60px] leading-[60px] rounded-[10px] text-white mx-auto hover:pr-[38px] max-md:w-full max-md:h-[40px] max-md:leading-[40px] max-md:text-[14px] max-md:rounded-[4px]'

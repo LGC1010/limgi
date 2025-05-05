@@ -7,7 +7,7 @@ const data = [
     image: '/geul_kkae_bi_logo.svg',
     team: true,
     stack: ['팀', '반응형', '사이드'],
-    github: 'https://github.com/dev-rjw/geul-kkae-bi',
+    github: 'https://github.com/LGC1010/geul-kkae-bi',
     demo: 'https://www.geul-kkae-bi.com/',
     type: 'geul'
   },
@@ -19,7 +19,7 @@ const data = [
     image: '/poultry_fram_logo.png',
     team: true,
     stack: ['팀', '사이드'],
-    github: 'https://github.com/hot5667/poultry_farm',
+    github: 'https://github.com/LGC1010/poultry_farm',
     demo: 'https://calendar-demo.vercel.app',
     type: 'poultry'
   },
@@ -31,7 +31,7 @@ const data = [
     image: '/monggle_logo.png',
     team: true,
     stack: ['팀', '사이드'],
-    github: 'https://github.com/11-JYP/monggle',
+    github: 'https://github.com/LGC1010/monggle',
     demo: 'https://calendar-demo.vercel.app',
     type: 'monggle'
   },
@@ -42,6 +42,7 @@ const data = [
     description: '개인 포트폴리오 사이트',
     team: false,
     stack: ['개인', '포트폴리오'],
+    github: 'https://github.com/LGC1010/limgi',
     demo: 'https://limgi.vercel.app/',
     type: 'portfolio'
   }
