@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 프론트엔드 포트폴리오
 
-## Getting Started
+안녕하세요, 프론트엔드 개발자 임기철입니다.  
+`limgi.site`는 저의 프로젝트 경험과 성장 과정을 시각적으로 정리한 포트폴리오 웹사이트입니다.  
+단순 나열이 아닌 실무 중심의 프로젝트 설명과 구조화된 정보 제공을 통해  
+면접관이 핵심을 빠르게 이해할 수 있도록 설계했습니다.
 
-First, run the development server:
+<br/>
+
+## 💡 사이트 주요 특징
+
+- 메인 화면에 마우스 애니메이션을 적용해 방문자가 자연스럽게 스크롤하도록 유도함  
+- About 섹션에서 인터뷰 형식으로 전향 계기, 업무 가치관, 자기계발 방법 등을 소개함  
+- 각 프로젝트는 팝업 형태로 구현되어 상세 설명, 사이트 링크, GitHub 링크를 간편하게 확인 가능  
+- Framer Motion을 활용한 스크롤 기반 인터랙션으로 콘텐츠 몰입도 향상  
+- 다양한 디바이스에서도 안정적인 사용 경험을 제공하기 위한 반응형 설계 적용
+
+<br/>
+
+## 🚀 사용 기술 스택
+
+- **Frontend**: React, TypeScript, TailwindCSS  
+- **Animation**: Framer Motion  
+- **Hosting**: Vercel
+
+<br/>
+
+## 📁 프로젝트 폴더 구조
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+├── src/
+│   ├── components/        # UI 컴포넌트
+│   ├── pages/             # 페이지 구성
+│   ├── data/              # 프로젝트 및 인터뷰 콘텐츠 데이터
+│   └── styles/            # Tailwind 기반 스타일 정의
+├── public/
+├── README.md
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🙋🏻‍♂️ About Me
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+웹 퍼블리셔로 시작해 사용자 중심 UI 설계에 익숙하며,  
+기능 구현과 인터랙션 개발에 흥미를 느껴 프론트엔드 개발자로 전향했습니다.  
+React 기반 프로젝트에서 상태 관리, 음성 인식 기능, 결과 시각화까지 직접 구현하며 실무 감각을 쌓았고,  
+현재는 Vue와 Java(Spring Boot) 등 다양한 스택도 학습하며 기술의 폭을 넓히고 있습니다.  
+협업에 있어서도 기획자·디자이너와의 커뮤니케이션을 중요하게 생각하며,  
+더 나은 사용자 경험을 위한 개발을 지향합니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📫 Contact
+- **Portfolio**: https://www.limgi.site
+- **GitHub**: https://github.com/LGC1010
+- **Email**: dntksql1010@naver.com 
